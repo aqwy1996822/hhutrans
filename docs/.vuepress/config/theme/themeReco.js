@@ -15,6 +15,7 @@ module.exports = {
   repo: 'https://github.com/aqwy1996822/hhutrans',
   // 自定义仓库链接文字。
   repoLabel: 'hhutrans_github',
+
   valineConfig: {
     appId: 'fBDPBl6rckEMkaEqqd5cRn3I-gzGzoHsz',// your appId
     appKey: 'JK56jgBjKYzDziXySplJctEl', // your appKey
