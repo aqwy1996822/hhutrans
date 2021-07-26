@@ -14,7 +14,7 @@ module.exports = {
   // 你的GitHub仓库，请正确填写
   repo: 'https://github.com/aqwy1996822/hhutrans',
   // 自定义仓库链接文字。
-  repoLabel: 'hhutrans_github',
+  repoLabel: 'hhutrans',
 
   valineConfig: {
     appId: 'fBDPBl6rckEMkaEqqd5cRn3I-gzGzoHsz',// your appId
@@ -22,7 +22,7 @@ module.exports = {
   },
   noFoundPageByTencent: false,
   keyPage: {
-    keys: ['kexueguan723'], // 1.3.0 版本后需要设置为密文
+    keys: ['a6fe02376f3ca19cb47d3cfc65f071e1'], // 1.3.0 版本后需要设置为密文
     absoluteEncryption: true,
   },
   mode: 'auto',
