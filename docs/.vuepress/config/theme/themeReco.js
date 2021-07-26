@@ -30,4 +30,8 @@ module.exports = {
   lastUpdated: 'Last Updated', // string | boolean
   // 作者
   author: 'Leo',
+
+  editLinks: true,
+  editLinkText: '在 GitHub 上编辑此页 ！'
+
 }
