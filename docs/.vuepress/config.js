@@ -11,12 +11,7 @@ module.exports = {
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
-  themeConfig: {
-    // 你的GitHub仓库，请正确填写
-    repo: 'https://github.com/aqwy1996822/hhutrans',
-    // 自定义仓库链接文字。
-    repoLabel: 'hhutrans_github',
-  },
+  themeConfig ,
   markdown: {
     lineNumbers: true
   },

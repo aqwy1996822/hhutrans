@@ -4,7 +4,7 @@ module.exports = [
   { text: '友链',
     icon: 'reco-message',
     items: [
-      { text: 'GitHub', link: 'https://github.com', icon: 'reco-github' },
+      { text: 'GitHub', link: 'https://github.com/aqwy1996822/hhutrans', icon: 'reco-github' },
     ]
   }
 ]
