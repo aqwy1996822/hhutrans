@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "hhutrans's blog",
   "main": "index.js",
-  "repository": "git@github.com:aqwy1996822/hhutrans.git",
-  "author": "aqwy1996822",
+  "repository": "https://github.com/aqwy1996822/hhutrans.git",
+  "author": "aqwy1996822 <aqwy1996822@163.com>",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
