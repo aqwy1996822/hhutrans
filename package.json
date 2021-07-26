@@ -1,9 +1,9 @@
 {
-  "name": "afternoon-grocery-store",
+  "name": "hhutrans",
   "version": "1.0.0",
   "description": "hhutrans's blog",
   "main": "index.js",
-  "repository": "http://recoluan.gitlab.io",
+  "repository": "git@github.com:aqwy1996822/hhutrans.git",
   "author": "aqwy1996822",
   "license": "MIT",
   "scripts": {
