@@ -11,6 +11,10 @@ module.exports = {
       text: '标签' // 默认 “标签”
     }
   },
+  // 你的GitHub仓库，请正确填写
+  repo: 'https://github.com/aqwy1996822/hhutrans',
+  // 自定义仓库链接文字。
+  repoLabel: 'hhutrans_github',
   valineConfig: {
     appId: 'fBDPBl6rckEMkaEqqd5cRn3I-gzGzoHsz',// your appId
     appKey: 'JK56jgBjKYzDziXySplJctEl', // your appKey
