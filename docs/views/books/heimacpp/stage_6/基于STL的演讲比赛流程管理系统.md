@@ -101,7 +101,7 @@
 
 代码如下：
 
-```c++
+```cpp
 #pragma once
 #include<iostream>
 using namespace std;
@@ -124,7 +124,7 @@ public:
 
 在speechManager.cpp中将构造和析构函数空实现补全
 
-```c++
+```cpp
 #include "speechManager.h"
 
 SpeechManager::SpeechManager()
@@ -158,7 +158,7 @@ SpeechManager::~SpeechManager()
 
 * 在管理类speechManager.cpp中实现 show_Menu()函数
 
-```c++
+```cpp
 void SpeechManager::show_Menu()
 {
 	cout << "********************************************" << endl;
@@ -180,7 +180,7 @@ void SpeechManager::show_Menu()
 
 代码：
 
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 #include "speechManager.h"
@@ -213,7 +213,7 @@ int main() {
 
 代码：
 
-```c++
+```cpp
 int main() {
 
 	SpeechManager sm;
@@ -257,7 +257,7 @@ int main() {
 
 在speechManager.cpp中提供具体的功能实现
 
-```c++
+```cpp
 void SpeechManager::exitSystem()
 {
 	cout << "欢迎下次使用" << endl;
@@ -299,7 +299,7 @@ void SpeechManager::exitSystem()
 * 选手类中的属性包含：选手姓名、分数
 * 头文件中创建 speaker.h文件，并添加代码：
 
-```C++
+```cpp
 #pragma once
 #include<iostream>
 using namespace std;
@@ -320,7 +320,7 @@ public:
 
 * 在speechManager.h中添加属性
 
-```C++
+```cpp
 	//比赛选手 容器  12人
 	vector<int>v1;
 
@@ -342,7 +342,7 @@ public:
 
 - 在speechManager.h中提供开始比赛的的成员函数 `void initSpeech();`
 
-```c++
+```cpp
 	//初始化属性
 	void initSpeech();
 ```
@@ -351,7 +351,7 @@ public:
 
 - 在speechManager.cpp中实现`void initSpeech();`
 
-```c++
+```cpp
 void SpeechManager::initSpeech()
 {
 	//容器保证为空
@@ -368,7 +368,7 @@ void SpeechManager::initSpeech()
 
 - SpeechManager构造函数中调用`void initSpeech();`
 
-```c++
+```cpp
 SpeechManager::SpeechManager()
 {
 	//初始化属性
@@ -384,7 +384,7 @@ SpeechManager::SpeechManager()
 
 * 在speechManager.h中提供开始比赛的的成员函数 `void createSpeaker();`
 
-```C++
+```cpp
 	//初始化创建12名选手
 	void createSpeaker();
 ```
@@ -393,7 +393,7 @@ SpeechManager::SpeechManager()
 
 * 在speechManager.cpp中实现`void createSpeaker();`
 
-```C++
+```cpp
 void SpeechManager::createSpeaker()
 {
 	string nameSeed = "ABCDEFGHIJKL";
@@ -422,7 +422,7 @@ void SpeechManager::createSpeaker()
 
 * SpeechManager类的 构造函数中调用`void createSpeaker();`
 
-```C++
+```cpp
 SpeechManager::SpeechManager()
 {
     //初始化属性
@@ -437,7 +437,7 @@ SpeechManager::SpeechManager()
 
 * 测试 在main函数中，可以在创建完管理对象后，使用下列代码测试12名选手初始状态
 
-```C++
+```cpp
 for (map<int, Speaker>::iterator it = sm.m_Speaker.begin(); it != sm.m_Speaker.end(); it++)
 {
 	cout  << "选手编号：" << it->first 
@@ -463,7 +463,7 @@ for (map<int, Speaker>::iterator it = sm.m_Speaker.begin(); it != sm.m_Speaker.e
 * 在speechManager.h中提供开始比赛的的成员函数 `void startSpeech();`
 * 该函数功能是主要控制比赛的流程
 
-```C++
+```cpp
 	//开始比赛 - 比赛流程控制
 	void startSpeech();
 ```
@@ -473,7 +473,7 @@ for (map<int, Speaker>::iterator it = sm.m_Speaker.begin(); it != sm.m_Speaker.e
 * 在speechManager.cpp中将startSpeech的空实现先写入
 * 我们可以先将整个比赛的流程 写到函数中
 
-```C++
+```cpp
 //开始比赛
 void SpeechManager::startSpeech()
 {
@@ -509,7 +509,7 @@ void SpeechManager::startSpeech()
 
 * 在speechManager.h中提供抽签的的成员函数 `void speechDraw();`
 
-```C++
+```cpp
 	//抽签
 	void speechDraw();
 ```
@@ -518,7 +518,7 @@ void SpeechManager::startSpeech()
 
 - 在speechManager.cpp中实现成员函数 `void speechDraw();`
 
-```C++
+```cpp
 void SpeechManager::speechDraw()
 {
 	cout << "第 << " << this->m_Index << " >> 轮比赛选手正在抽签"<<endl;
@@ -570,7 +570,7 @@ void SpeechManager::speechDraw()
 
 * 在speechManager.h中提供比赛的的成员函数 `void speechContest();`
 
-```C++
+```cpp
 	//比赛
 	void speechContest();
 ```
@@ -579,7 +579,7 @@ void SpeechManager::speechDraw()
 
 * 在speechManager.cpp中实现成员函数 `void speechContest();`
 
-```C++
+```cpp
 void SpeechManager::speechContest()
 {
 	cout << "------------- 第"<< this->m_Index << "轮正式比赛开始：------------- " << endl;
@@ -677,7 +677,7 @@ void SpeechManager::speechContest()
 
 * 在speechManager.h中提供比赛的的成员函数 `void showScore();`
 
-```C++
+```cpp
 	//显示比赛结果
 	void showScore();
 ```
@@ -686,7 +686,7 @@ void SpeechManager::speechContest()
 
 * 在speechManager.cpp中实现成员函数 `void  showScore();`
 
-```C++
+```cpp
 void SpeechManager::showScore()
 {
 	cout << "---------第" << this->m_Index << "轮晋级选手信息如下：-----------" << endl;
@@ -748,7 +748,7 @@ void SpeechManager::showScore()
 
 * 在speechManager.h中添加保存记录的成员函数 `void saveRecord();`
 
-```C++
+```cpp
 	//保存记录
 	void saveRecord();
 ```
@@ -757,7 +757,7 @@ void SpeechManager::showScore()
 
 * 在speechManager.cpp中实现成员函数 `void saveRecord();`
 
-```C++
+```cpp
 void SpeechManager::saveRecord()
 {
 	ofstream ofs;
@@ -814,7 +814,7 @@ void SpeechManager::saveRecord()
 
 其中m_Record 中的key代表第几届，value记录具体的信息
 
-```C++
+```cpp
 	//读取记录
 	void loadRecord();
 
@@ -829,7 +829,7 @@ void SpeechManager::saveRecord()
 
 * 在speechManager.cpp中实现成员函数 `void loadRecord();`
 
-```C++
+```cpp
 void SpeechManager::loadRecord()
 {
 	ifstream ifs("speech.csv", ios::in); //输入流对象 读取文件
@@ -899,7 +899,7 @@ void SpeechManager::loadRecord()
 
 * 在speechManager.h中添加保存记录的成员函数 `void showRecord();`
 
-```C++
+```cpp
 	//显示往届得分
 	void showRecord();
 ```
@@ -908,7 +908,7 @@ void SpeechManager::loadRecord()
 
 * 在speechManager.cpp中实现成员函数 `void showRecord();`
 
-```C++
+```cpp
 void SpeechManager::showRecord()
 {
 	for (int i = 0; i < this->m_Record.size(); i++)
@@ -973,7 +973,7 @@ void SpeechManager::showRecord()
 
 解决方式：在main函数一开始 添加随机数种子
 
-```C++
+```cpp
 srand((unsigned int)time(NULL));
 ```
 
@@ -991,7 +991,7 @@ srand((unsigned int)time(NULL));
 
 * 在speechManager.h中添加保存记录的成员函数 `void clearRecord();`
 
-```C++
+```cpp
 	//清空记录
 	void clearRecord();
 ```
@@ -1000,7 +1000,7 @@ srand((unsigned int)time(NULL));
 
 * 在speechManager.cpp中实现成员函数 `void clearRecord();`
 
-```C++
+```cpp
 void SpeechManager::clearRecord()
 {
 	cout << "确认清空？" << endl;
