@@ -26,8 +26,13 @@ module.exports = {
           theme: '好吧，希望你能喜欢我的其他小伙伴。',
           close: '再见哦'
         },
-        width: 240,
-        height: 352
+        modelStyle: {
+          right: '90px',
+          bottom: '-20px',
+          opacity: '0.9'
+        },
+        width: 150,
+        height: 220
       }],
       [
       "ribbon",

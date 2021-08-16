@@ -22,7 +22,7 @@ module.exports = {
   },
   noFoundPageByTencent: false,
   keyPage: {
-    keys: ['a6fe02376f3ca19cb47d3cfc65f071e1'], // 1.3.0 版本后需要设置为密文
+    keys: ['a6fe02376f3ca19cb47d3cfc65f071e1', '778e7705cd4ad6907ac828ed353f8f6f'], // 1.3.0 版本后需要设置为密文
     absoluteEncryption: true,
   },
   mode: 'auto',
